@@ -47,9 +47,8 @@ app.get('/health', (req, res) => {
 
 // Root route
 app.get('/', (req, res) => {
-  res.send('🚀 API is running...');
+  res.send('Hello World!');
 });
-
 // Global error handler
 app.use((err, req, res, next) => {
   console.error(err.stack);
